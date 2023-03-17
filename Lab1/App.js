@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Routes from './components/Routes';
+import Footer from './components/Footer';
 import Products from './screens/Products';
 import Pictures from './screens/Pictures';
 import Register from './screens/Register';
@@ -19,6 +20,7 @@ export default function App() {
           <Stack.Screen name="Pictures" component={Pictures} options={{headerShown: false}} />
           <Stack.Screen name="Register" component={Register} options={{headerShown: false}} />
         </Stack.Navigator>
+        <Footer />
       </NavigationContainer>
   );
 }
