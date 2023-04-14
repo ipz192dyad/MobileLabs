@@ -30,7 +30,7 @@ const Routes = () => {
         <View style={styles.container}>
             <View style={styles.customButton}>
                 <Image style={{ marginBottom: 3 }} source={require('../assets/Records.png')}></Image>
-                <Button title="Products" onPress={handlePress1} nam disabled={bool1}></Button>
+                <Button title="Products" onPress={handlePress1} disabled={bool1}></Button>
             </View>
             <View style={styles.customButton}>
                 <Image style={{ marginBottom: 3 }} source={require('../assets/Pictures.png')}></Image>
