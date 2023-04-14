@@ -1,16 +1,16 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import Picture from '../components/Picture'
 
 const Pictures = () => {
     return (
-        <View style={styles.container}>
-            <Picture/>
-            <Picture/>
-            <Picture/>
-            <Picture/>
-            <Picture/>
-            <Picture/>
-        </View>
+        <SafeAreaView style={styles.container}>
+            <ScrollView>
+                {[...Array(10)].map((x, i) =>
+                    <Picture key={i} />
+                )}
+                <Picture />
+            </ScrollView>
+        </SafeAreaView>
     );
 }
 
